@@ -1,3 +1,5 @@
+// Encontra todos os números primos de um número x >= 2 até y.
+
 function numerosPrimos(numero) {
     let primos = [];
     
