@@ -1,0 +1,16 @@
+function geraFib(num) {
+  let numAnterior = 0;
+  let numAtual = 1;
+
+  let pos = 2; // Já começa com 2 posições prontas acima
+  
+  while (pos < num) {
+    numAtual += numAnterior;
+    numAnterior = numAtual - numAnterior;
+    pos++;
+  }
+
+  return numAtual;
+}
+
+console.log(geraFib(10));
